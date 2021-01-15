@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  inset-inline-start: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+
+  & * {
+    position: absolute;
+    top: auto;
+    inset-inline-start: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: none;
+  }
+}
